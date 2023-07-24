@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.tw.css" />
+    <title>create page</title>
+  </head>
+
+  <body class="w-screen h-screen font-vazir">
+    <div
+      id="container"
+      class="flex flex-col items-center justify-center w-full h-full gap-6 bg-neutral-300"
+    >
+      <div
+        id="logo-container"
+        class="flex flex-col items-center justify-center gap-3"
+      >
+        <img src="../assets/icons/logo.svg" width="72" height="72" />
+        <h5 class="text-base font-semibold">صفحه ساز سروش پلاس</h5>
+      </div>
+      <div class="w-2/4 p-8 bg-white rounded-xl max-md:min-w-full">
+        <form class="flex flex-col w-full gap-9" dir="rtl">
+          <h2 class="w-full text-sm text-center">اطلاعات طراحی صفحه</h2>
+          <div class="flex flex-col w-full gap-1">
+            <label for="page-title" class="w-full"
+              >عنوان صفحه خود را وارد کنید</label
+            >
+            <input
+              type="text"
+              id="page-title"
+              placeholder="عنوان صفحه"
+              class="w-full block border-[1px] border-spacing-1 px-2 py-3 rounded-xl focus:outline-blue-600 placeholder: text-neutral-400"
+            />
+            <div class="text-xs font-normal text-neutral-400">
+              عنوان صفحه ، تگ عنوان HTML است.
+            </div>
+          </div>
+          <div class="flex gap-4 max-lg:flex-col">
+            <div class="flex flex-col w-full gap-1">
+              <label
+                for="page-title"
+                class="w-full text-sm font-normal text-neutral-800"
+                >نام صفحه خود را وارد کنید (انگلیسی)</label
+              >
+              <input
+                type="text"
+                id="page-title"
+                placeholder="نام صفحه"
+                class="w-full block border-[1px] border-spacing-1 px-2 py-3 rounded-xl placeholder: text-neutral-400 focus:outline-blue-600"
+              />
+              <div>
+                <input type="checkbox" id="form-checkbox" />
+                <label for="form-checkbox">در طراحی نمایش داده شود </label>
+              </div>
+            </div>
+            <div class="flex flex-col w-full gap-1">
+              <label
+                for="page-title"
+                class="w-full text-sm font-normal text-neutral-800"
+                >نام صفحه خود را وارد کنید (فارسی)</label
+              >
+              <input
+                type="text"
+                id="page-title"
+                placeholder="نام صفحه"
+                class="w-full block border-[1px] border-spacing-1 px-2 py-3 rounded-xl placeholder: text-neutral-400 focus:outline-blue-600"
+              />
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="w-full h-full px-10 py-4 text-white bg-blue-600 rounded-xl hover:bg-blue-800"
+          >
+            ذخیره و شروع طراحی
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
